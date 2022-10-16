@@ -33,13 +33,13 @@ const Concert = () => {
                 <div className="col-md-9 singer-container">
                     <div className="row row-cols-1 row-cols-md-3 g-4 ms-3">
                         {
-                            singers.map(singer => <Singer key={singer.id} singers={singer} handleAddToCart={handleAddToCart}></Singer>)
+                            singers.map(singer => <Singer key={singer.id} singers={singer} handleAddToCart={handleAddToCart} />)
                         }
                     </div>
                 </div>
                 {/* cart part import */}
                 <div className="col-md-3 cart-container">
-                    <Cart cart={cart}></Cart>
+                    <Cart cart={cart} />
                 </div>
             </div>
         </div>
